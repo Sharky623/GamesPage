@@ -18,7 +18,7 @@ ul{
     justify-content: space-around;
     align-items: center;
     font-family: 'Play', sans-serif;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 li{
     list-style: none;
@@ -88,7 +88,6 @@ grid-area: stats;
 }
 .card-image {
 grid-area: image;
-background: url("Hide and Seek.jpg");
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 background-size: cover;
@@ -152,8 +151,11 @@ nav{
 .CardsRow1{
     grid-column: 1/5;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,300px);
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 .card-text{
     overflow-y: scroll;
-}
+}   
